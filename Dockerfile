@@ -9,7 +9,8 @@ COPY . /app
 #RUN apt-get update && apt-get install openjdk-7-jre-headless
 #RUN apt-get clean
 
-RUN tar -xzf  openrefine-linux-3.1.tar.gz && \
+RUN wget -nv https://github.com/OpenRefine/OpenRefine/releases/download/3.1/openrefine-linux-3.1.tar.gz && \
+    tar -xzf  openrefine-linux-3.1.tar.gz && \
     mv openrefine-3.1 /usr/local/openrefine-3.1 && \
     rm openrefine-linux-3.1.tar.gz
 
