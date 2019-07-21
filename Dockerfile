@@ -1,10 +1,10 @@
 FROM openjdk:8
 ## Establece el directorio de trabajo en /app
-WORKDIR /app
+# WORKDIR /app
 
 ## Copia el directorio actual en el host al directorio /app 
 ## en el contenedor
-COPY . /app
+# COPY . /app
 
 #RUN apt-get update && apt-get install openjdk-7-jre-headless
 #RUN apt-get clean
