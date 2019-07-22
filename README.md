@@ -1,2 +1,3 @@
-# open-refine
-Google open-refine in Docker
+# OpenRefine in Docker
+
+Google's OpenRefine in Docker
