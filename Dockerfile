@@ -14,4 +14,4 @@ RUN wget -nv https://github.com/OpenRefine/OpenRefine/releases/download/3.1/open
 
 EXPOSE 3333
 
-CMD /usr/local/openrefine-3.1/refine  -i 0.0.0.0
+ENTRYPOINT ["/usr/local/openrefine-3.1/refine",  "-i", "0.0.0.0"]
